@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+@import '../../../../../styles.scss';
+mat-toolbar{
+  background-color: mat.get-color-from-palette($Digital-Orders-primary, 700);
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
