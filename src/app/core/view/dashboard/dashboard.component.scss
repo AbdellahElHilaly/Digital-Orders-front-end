@@ -1,7 +1,10 @@
 // dashboard.component.scss
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+//fa fa-bars
 @import '../../../../styles.scss';
+
+svg{
+  color: $text-color;
+}
 
 .sidebar {
 
@@ -17,11 +20,12 @@
     background-color: $primary-color;
     border-bottom: 1px solid $secondary-color;
 
+
     .fa-bars {
       color: $secondary-color;
     }
 
-    // Rest of your styles...
+
   }
 
   .sidebar {
@@ -36,6 +40,21 @@
 
 .content {
   background-color: $background-color;
+
+  .navigation {
+    background-color: $primary-color;
+    border-bottom: 1px solid $secondary-color;
+
+    .nav-item {
+      color: $secondary-color;
+    }
+
+    .nav-item.active {
+      background-color: $secondary-color;
+      color: $background-color;
+    }
+
+  }
 
   .info {
     border-color: $secondary-color;
