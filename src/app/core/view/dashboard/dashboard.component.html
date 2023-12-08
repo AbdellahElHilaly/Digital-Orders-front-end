@@ -1,0 +1,20 @@
+<div  class="wrapper flex h-screen bg-grey-lightest sm:flex-col md:flex-row font-light w-full">
+  <div  [ngClass]="{'hidden': isSidebarCollapsed}" class=" sidebar bg-orange-darker md:w-64 sm:w-screen">
+    <header class="flex justify-between items-center border-b border-orange-darkest pt-8 pb-8 pl-6 pr-6">
+      <div id="logo">
+        <a routerLink="/home" class="no-underline text-white md:text-2xl sm:text-4xl font-bold">
+          home
+        </a>
+      </div>
+      <div class="text-white border border-white p-2 h-8 rounded" (click)="toggleSidebar()">
+        <i *ngIf="isSidebarCollapsed" class="fa fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <div  class=" content px-8 bg-transparent flex-grow flex-shrink flex-auto">
+    <div class="text-white border border-white p-2 h-8 rounded" (click)="toggleSidebar()">
+      <i *ngIf="isSidebarCollapsed" class="fa fa-bars"></i>
+    </div>
+    <h1 class="text-3xl text-grey-darkest font-bold mb-4">Welcome to the Dashboard Content</h1>
+  </div>
+</div>
