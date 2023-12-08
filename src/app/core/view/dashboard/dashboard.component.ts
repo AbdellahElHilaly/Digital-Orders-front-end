@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {NgClass, NgIf} from "@angular/common";
+import {ListUsersComponent} from "../module/user/list-users/list-users.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,8 @@ import {NgClass, NgIf} from "@angular/common";
   imports: [
     RouterLink,
     NgIf,
-    NgClass
+    NgClass,
+    ListUsersComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'

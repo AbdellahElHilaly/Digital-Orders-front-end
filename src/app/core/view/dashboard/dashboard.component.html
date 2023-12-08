@@ -1,7 +1,12 @@
-<div class="wrapper flex h-screen bg-grey-lightest sm:flex-col md:flex-row font-light w-full">
+<div class="wrapper flex h-screen bg-grey-lightest sm:flex-col md:flex-row font-light">
+
+
 
 
   <div [ngClass]="{'hidden': isSidebarCollapsed}" class="sidebar bg-orange-darker md:w-64 sm:w-screen">
+
+
+
     <header class="flex justify-between items-center border-b border-orange-darkest pt-8 pb-8 pl-6 pr-6">
       <div id="logo">
         <a routerLink="/home" class="no-underline text-white md:text-2xl sm:text-4xl font-bold">
@@ -15,6 +20,8 @@
       </svg>
 
     </header>
+
+
     <div>
       <button class="flex items-center w-full py-2 px-4 text-gray-800 border-b border-gray-600 mb-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -31,14 +38,14 @@
         </svg>
         Button 1
       </button>
-  <button class="flex items-center w-full py-2 px-4 text-gray-800 border-b border-gray-600 mb-2">
+      <button class="flex items-center w-full py-2 px-4 text-gray-800 border-b border-gray-600 mb-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="currentColor"
                 d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/>
         </svg>
         Button 1
       </button>
-  <button class="flex items-center w-full py-2 px-4 text-gray-800 border-b border-gray-600 mb-2">
+      <button class="flex items-center w-full py-2 px-4 text-gray-800 border-b border-gray-600 mb-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="currentColor"
                 d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/>
@@ -52,9 +59,9 @@
   </div>
 
 
-  <div class=" content  bg-transparent flex-grow flex-shrink flex-auto">
+  <div class="content bg-transparent flex-grow flex-shrink flex-auto overflow-hidden relative">
 
-    <nav class="navigation">
+    <nav class="navigation ">
       <div class="container mx-auto py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
 
@@ -110,7 +117,17 @@
       </div>
     </nav>
 
-    <h1 class="text-3xl text-grey-darkest font-bold mb-4">Welcome to the Dashboard Content</h1>
+    <div class=" overflow-y-auto dashboard-content">
+
+      <app-list-users></app-list-users>
+
+    </div>
+
+
   </div>
+
+
+
+
 
 </div>

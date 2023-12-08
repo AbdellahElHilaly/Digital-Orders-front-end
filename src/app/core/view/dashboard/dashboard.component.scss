@@ -1,13 +1,16 @@
-// dashboard.component.scss
-//fa fa-bars
 @import '../../../../styles.scss';
 
-svg{
+
+svg {
   color: $text-color;
 }
 
-.sidebar {
 
+.dashboard-content {
+  max-height: 90%;
+}
+
+.sidebar {
   &.hidden {
     display: none;
   }
@@ -20,12 +23,9 @@ svg{
     background-color: $primary-color;
     border-bottom: 1px solid $secondary-color;
 
-
     .fa-bars {
       color: $secondary-color;
     }
-
-
   }
 
   .sidebar {
@@ -53,13 +53,9 @@ svg{
       background-color: $secondary-color;
       color: $background-color;
     }
-
   }
 
   .info {
     border-color: $secondary-color;
-
   }
-
-
 }
