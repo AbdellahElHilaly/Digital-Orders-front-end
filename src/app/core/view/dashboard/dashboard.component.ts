@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 import {NgClass, NgIf} from "@angular/common";
 import {ListUsersComponent} from "../module/user/list-users/list-users.component";
 
@@ -10,7 +10,8 @@ import {ListUsersComponent} from "../module/user/list-users/list-users.component
     RouterLink,
     NgIf,
     NgClass,
-    ListUsersComponent
+    ListUsersComponent,
+    RouterOutlet
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
